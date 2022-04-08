@@ -1,15 +1,18 @@
 # CalcoloNumerico
 
-Raccolta di alcune funzioni utili durante il corso di Calcolo Numerico
+Software by Carlo Zambaldo (info@carlozambaldo.it)
+This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
 
+Raccolta di alcune funzioni utili durante il corso di Calcolo Numerico
 
 ## Basic Matrix Propreties - Linear Systems - non-linar functions ##
 * _**condizioni**_
   (requires _controlla_) finds propreties of Matrices and shows methods to solve the linear system "Ax=b".
 * _**molteplicity**_
   computes the molteplicity of the zero of a function
-
-
+* _**Wilkinson**_
+  estimates the maximum value of the perturbation expected on a given matrix
+  
 ## Function Approx ##
 * _**CGL**_ (chebyshev Gauss Lobatto)
   computes CGL knodes given the number of knodes-1 required and the interval [a,b]
