@@ -15,6 +15,11 @@ function [] = condizioni(A, P, toll)
     %    - Richardson
     %
     
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+    
+
+    
     
     
     if(size(A,1) ~= size(A,2))
