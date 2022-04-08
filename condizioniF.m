@@ -6,6 +6,11 @@ function [] = condizioniF(f, alpha, a, b, n_pti)
     %  a,b  intervallo di plot, può essere omesso
     %  n_pti = numero di punti nell'intervallo a,b (se non inserito = 1001)
     
+    
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+    
+
     funzione(f);
     
     if nargin == 2 && abs(f(alpha))<=0.5 % tolleranza preimpostata
