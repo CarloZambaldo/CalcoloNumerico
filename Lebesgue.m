@@ -4,6 +4,11 @@ function [Lebesgue_const] = Lebesgue(n, x_nodi, n_punti_grafico)
     % n = grado della base polinomiale di Lagrange
     % x_nodi = ascisse dei nodi
     
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+    
+
+    
     gamma = 0.5; %circa
     Lebesgue_const = (2^(n+1))/(exp(1)*n*(log(n)+gamma));
     % l'interpolazione polinomiale di Lagrange su nodi equispaziati non è
