@@ -6,6 +6,10 @@ function [x_k] = CGL(a,b,grado)
     % funzione per il calcolo dei nodi di CHEBYSHEV-GAUSS-LOBATTO
     % restituisce un vettore del tipo:
     % x_k = [x_0, x_1, ..., x_n];
+    %
+
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
 
     x_i = @(i) -cos((pi/grado)*i);
     if a ~= -1 && b ~=1
