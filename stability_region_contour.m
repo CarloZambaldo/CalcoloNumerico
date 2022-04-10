@@ -1,8 +1,14 @@
 function [] = stability_region_contour(R,a,b,n_punti)
     % [] = stability_region(R)
-    % disegna la regione di stabilità 
+    %
+    % disegna solo il contorno della regione di stabilità 
     % R = funzione di stabilità: R = R(z)
     %
+    % funzione analoga a stability_region (si rimanda all'help di questa).
+    
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+    
     
     if ~(nargin>1)
         a = -5;
