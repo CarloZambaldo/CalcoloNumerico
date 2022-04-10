@@ -1,7 +1,11 @@
 function [] = stability_region(R,a,b,n_punti)
-    % [] = stability_region(R)
+    % [] = stability_region(R,a,b,n_punti)
+    %
     % disegna la regione di stabilità 
     % R = funzione di stabilità: R = R(z)
+    % opzionali:
+    % a,b = estremi dell'intervallo
+    % n_punti = numero punti del grafico (default: 1001)
     %
     % R notevoli:
     %
@@ -13,6 +17,9 @@ function [] = stability_region(R,a,b,n_punti)
     % PER AVERE STABILITA':
     % abs(R(h*lambda)) < 1
 
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+    
     
     if ~(nargin>1)
         a = -5;
