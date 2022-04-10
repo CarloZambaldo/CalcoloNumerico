@@ -20,7 +20,7 @@ Raccolta di alcune funzioni utili durante il corso di Calcolo Numerico
 * _**metodocorde**_
 * _**metodosecanti**_
 * _**ptofis_sistemi**_
-* * _**molteplicity**_
+* _**molteplicity**_
   computes the molteplicity of the zero of a function
 
 
