@@ -1,10 +1,16 @@
 function [] = stimaerr(toll, a, b, f, n);
-    % funzione "multifunzione":
-    % stima il numero N minimo di sottointervalli per cui l'errore<toll
-    % data:
-    % toll
+    % [] = stimaerr(toll, a, b, f, n)
     %
-    
+    % funzione "multifunzione":
+    % stima il numero N minimo di sottointervalli per cui errore < toll
+    %
+    % toll  =  tolleranza
+    % a,b   =  estremi dell'intervallo
+    % f     =  anonymous function
+    % n     =  ordine dell'interpolazione di Lagrange
+
+
+
     % Software by Carlo Zambaldo (info@carlozambaldo.it)
     % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
     
