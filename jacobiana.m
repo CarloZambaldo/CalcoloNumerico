@@ -7,6 +7,8 @@ function [J] = jacobiana(F, n_comp)
     % F = @(x,y) x+y;
     % J = jacobiana(F,2)
     %
+    % ATTENZIONE: è possibile calcolare la Jacobiana
+    % per funzioni fino ad un massimo di 5 componenti
     
     % Software by Carlo Zambaldo (info@carlozambaldo.it)
     % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
