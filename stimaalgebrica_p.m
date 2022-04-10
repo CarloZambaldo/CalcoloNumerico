@@ -28,6 +28,11 @@ function [p,c]=stimaalgebrica_p(err,hh)
     % c          Vettore contenente tutte le stime del 
     %            fattore di abbattimento dell'errore
 
+
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+    
+    
     if size(err) ~= size(hh)
         error("ATTENZIONE: le dimensioni di err e hh devono combaciare.\n");
     end
