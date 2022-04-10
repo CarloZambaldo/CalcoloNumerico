@@ -1,5 +1,5 @@
 function [] = condizioni(A, P, toll)
-    % condizioni(A, P, toll)
+    % [] = condizioni(A, P, toll)
     %
     % a seconda del numero di input restituisce più o meno caratteristiche associate ad A:
     %   - numero di condizionamento e raggio spettrale
