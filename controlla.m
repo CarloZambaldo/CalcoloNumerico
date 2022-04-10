@@ -1,4 +1,13 @@
 function [] = controlla(A)
+    % la funzione restituisce:
+    % - numero di condizionamento, stima del numero di condizionamento (se la matrice è molto grande)
+    % - raggio spettrale
+    % 
+ 
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+    
+
     n = size(A,1);
     m = size(A,2);
     if(m ~= n)
