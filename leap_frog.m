@@ -2,14 +2,21 @@ function [t, u, w] = leap_frog(f, tv, y0, w0, h, Nh)
     % [t, u, w] = leap_frog(f, tv, y0, w0, h, Nh)
     %
     % implementazione metodo Leap Frog per la risoluzione di ODE di secondo grado
-    % h = ampiezza sottointervalli
+    % h   =  ampiezza sottointervalli
+    % Nh  =  numero di intervalli + 1  (*)
+    % tv  =  [t0 tf]
     %
-    % tv = [t0 tf]
     % NOTA: f = f(t,y,v)
     % dove v = y'
     %
     % metodo implicito, utilizzo iterazioni di punto fisso per risolvere 
     % l'equazione non lineare.
+    %
+    % NOTA (*): se viene inserito Nh il valore dichiarato per h viene ignorato 
+    % e la funzione ricalcola h come:   h = (tv(2) - tv(1))/Nh
+    
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
     
     N_max = 1000;
     toll = 1e-6;
