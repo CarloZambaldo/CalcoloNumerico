@@ -1,23 +1,35 @@
-# CalcoloNumerico
+# CalcoloNumerico #
 
 Software by Carlo Zambaldo (info@carlozambaldo.it)
 This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
 
 Raccolta di alcune funzioni utili durante il corso di Calcolo Numerico
 
-## Basic Matrix Propreties - Linear Systems - non-linar functions ##
+  
+## Basic Calculus - Basic Matrix Propreties - Linear Systems ##
+* _**insiemeF**_
 * _**condizioni**_
   (requires _controlla_) finds propreties of Matrices and shows methods to solve the linear system "Ax=b".
-* _**molteplicity**_
-  computes the molteplicity of the zero of a function
 * _**Wilkinson**_
   estimates the maximum value of the perturbation expected on a given matrix
+* _**controlla**_
   
+  
+## Non-linar Functions - Zeros of Functions##
+* _**condizioniF**_
+* _**metodocorde**_
+* _**metodosecanti**_
+* _**ptofis_sistemi**_
+* * _**molteplicity**_
+  computes the molteplicity of the zero of a function
+
+
 ## Function Approx ##
 * _**CGL**_ (chebyshev Gauss Lobatto)
   computes CGL knodes given the number of knodes-1 required and the interval [a,b]
 * _**Lebesgue**_
   (requires _funzione_caratteristica_lagrange_) draws Lagrange polynomials and prints out the Lebesgue constant
+* _**funzione_caratteristica_lagrange**_
 * _**interp_trigo.m**_ 
   outputs the trigonometric interpolator as a function handle
 
@@ -25,7 +37,7 @@ Raccolta di alcune funzioni utili durante il corso di Calcolo Numerico
 ## Numerical Derivation/Integration - ODEs ##
 * _**grado_di_esattezza**_
   computes the degree of accuracy of a numerical formula (for the integration)
-* _**stability_region**_ 
+* _**stability_region**_, _**stability_region_contour**_
   plots the stability region of a particular numerical method (notice: the stability function is required!)
 * _**leap_frog**_
   implements the Leap-Frog method
@@ -40,24 +52,28 @@ Raccolta di alcune funzioni utili durante il corso di Calcolo Numerico
   evaluates local Péclet number
 
 
+## Basic Symbolic ##
+* _**deriva**_
+  outputs the derivative of the given function as a function handle
+* _**integra**_
+   outputs the integral of the given function as a function handle (notice: no constant added [c=0]!)
+* _**jacobiana**_ 
+
+
 ## Other ##
+* _**stimaalgebrica_p**_
+  estimates C and p in: err <= C * h^p
+* _**stimaerr**_
 * _**plot_soluzione**_
   quickly plots the solution obtained with a numerical method (i.e. _diffusione_trasporto_reazione_)
 * _**tridiag**_
   outputs a tridiagonal matrix
 * _**pentadiag**_
   outputs a pentadiagonal matrix
+* _**poly2func**_
   
-  
-## Basic Symbolic ##
-* _**deriva**_
-  outputs the derivative of the given function as a function handle
-* _**integra**_
-   outputs the integral of the given function as a function handle (notice: no constant added [c=0]!)
 
-
-
-# Licence
+# Licence #
 
 Copyright 2020 Carlo Zambaldo
 
