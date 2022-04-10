@@ -2,7 +2,9 @@ function [p,c]=stimaalgebrica_p(err,hh)
     %
     % [p,c]=stimaalgebrica_p(err)
     %
-    %  err <= C * h^p
+    %  ----------------------
+    %  |   err <= C * h^p   |
+    %  ----------------------
     %
     % Stima ordine e fattore di abbattimento dell'errore
     % utilizzando le seguenti formule :
