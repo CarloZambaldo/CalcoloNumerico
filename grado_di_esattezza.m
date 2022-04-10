@@ -1,8 +1,8 @@
 function [] = grado_di_esattezza(formula,estr_i,estr_s)
     % [] = grado_di_esattezza(formula,estr_i,estr_s)
     %
-    % nota: formula è una funzione in funzione della funzione.
-    % formula = @(f) .... f(3)+ ... f(1/2) ...
+    % formula è un'anonymous function in funzione della funzione
+    %     esempio:   formula = @(f) .... f(3) + ... - f(1/2) ...
     %
     % estr_i, estr_s sono gli estremi di integrazione
     %
@@ -14,6 +14,10 @@ function [] = grado_di_esattezza(formula,estr_i,estr_s)
     %
     % si noti che gli estremi a e b possono essere messi "a caso", ma 
     % sempre con a<b
+    
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+    
 
     
     fprintf("-----------------------------------");
