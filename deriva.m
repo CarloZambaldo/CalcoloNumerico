@@ -1,8 +1,12 @@
 function [derivata] = deriva(f,ordine)
     % [derivata] = DERIVA(f,ordine)
-    % f: funzione in una variabile
-    % ordine: ordine della derivata finale (derivata prima, seconda, ...)
+    %
+    % f       =  anonymous function in UNA variabile
+    % ordine  =  ordine della derivata finale (derivata prima, seconda, ...)
+    %  
     % la derivata viene effettuata secondo la variabile di f
+    %
+    % l'output derivata è a sua volta un'anonymous function.
     %
     % attenzione:
     %   d[@(x)x]/dx = @()1   ->   ovvero non ha più argomento
