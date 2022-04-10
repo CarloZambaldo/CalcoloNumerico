@@ -15,7 +15,7 @@ Raccolta di alcune funzioni utili durante il corso di Calcolo Numerico
 * _**controlla**_
   
   
-## Non-linar Functions - Zeros of Functions##
+## Non-linar Functions - Zeros of Functions ##
 * _**condizioniF**_
 * _**metodocorde**_
 * _**metodosecanti**_
