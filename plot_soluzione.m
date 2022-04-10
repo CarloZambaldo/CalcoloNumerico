@@ -1,4 +1,5 @@
 function [] = plot_soluzione(t, y)
+    % [] = plot_soluzione(t, y)
     % stampa un grafico sul piano t-y
     %
     % input : t e y (discreti)
