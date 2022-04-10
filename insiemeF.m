@@ -1,20 +1,25 @@
 function [] = insiemeF(beta,t,L,U,num)
-    
-%     F = F(beta, t, L, U)
-%     beta = base
-%     t = n. di cifre
-%     L = estremo inferiore
-%     U = estremo superiore
-%     num = numero (se inserita, calcola la distanza con elemento
-%     successivo) va inserito in base decimale.
-%
-%     nota: segno
-%          s = 0 segno '+'
-%          s = 1 segno '-'
-%     una mantissa (xxxxxx), l'esponente -> trasforma mantissa in dec e
-%     moltiplica per 2^(e-t)
-%     con t numero di elementi della mantissa
+    %     [] = insiemeF(beta,t,L,U,num)
+    %
+    %     F    =  F(beta, t, L, U)
+    %     beta =  base
+    %     t    =  n. di cifre
+    %     L    =  estremo inferiore
+    %     U    =  estremo superiore
+    %     num  =  numero (se inserita, calcola la distanza con elemento
+    %     successivo) va inserito in base decimale!
+    %
+    %     nota: segno
+    %          s = 0 segno '+'
+    %          s = 1 segno '-'
+    %
+    %     una mantissa (xxxxxx), l'esponente -> trasforma mantissa in dec e
+    %     moltiplica per 2^(e-t)
+    %     con t numero di elementi della mantissa
 
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+    
     epsilon_macchina = beta .^ (1 - t);
     x_min = beta .^ (L - 1);
     x_max = beta .^ U .* (1- beta .^ (- t));
