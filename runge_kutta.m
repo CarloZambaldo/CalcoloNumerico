@@ -1,10 +1,9 @@
 function [t_h, u_h]=runge_kutta(f,t_max,y_0,h,B)
     %[t_h, u_h]=runge_kutta(f,t_max,y_0,h,B)
     %
-    % Risolve il problema di Cauchy 
-    %
-    % y'=f(y,t)
-    % y(0)=y_0
+    % Risolve il problema di Cauchy:
+    %   y' = f(y,t)
+    %   y(0) = y_0
     %
     % utilizzando il metodo di Runge-Kutta avendo fornito l'array di Butcher. 
     %
@@ -36,6 +35,9 @@ function [t_h, u_h]=runge_kutta(f,t_max,y_0,h,B)
     % NOTA:
     %        se sum(b) = 1  <-> il metodo RK è CONSISTENTE
 
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+    
 
     % vettore degli istanti in cui risolvo la edo
     t0=0;
