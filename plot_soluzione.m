@@ -1,7 +1,10 @@
 function [] = plot_soluzione(t, y)
-    % stampa un grafico
+    % stampa un grafico sul piano t-y
     %
     % input : t e y (discreti)
+    
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
     
     plot(t,y,'.-','LineWidth',1);
     hold on
