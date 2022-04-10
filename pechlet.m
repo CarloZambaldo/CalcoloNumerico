@@ -1,7 +1,14 @@
 function [Peh] = pechlet(mu, eta, h)
     % 
     % [Peh] = pechlet(mu, eta, h)
-    % VALUTA IL NUMERO DI PECHLET LOCALE
+    %
+    % valuta il numero di pechlet locale per il problema di diffuzione, trasporto e reazione.
+    % mu, eta, h sono i parametri dati dal problema
+    % (si veda l'help della funzione diffusione_trasporto_reazione)
+    
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+    
     
     if mu ~= 0
         %% FORMULA
