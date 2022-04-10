@@ -1,9 +1,9 @@
 function [funzione, h, x_j, c_tilde_k] = interp_trigo(f, n, periodo)
     % [funzione, h, x_j, c_tilde_k] = interp_trigo(f, n, periodo)
     %
-    % n = numero di intervalli
-    % x_j = j*h
-    % h = periodo / (n+1);
+    % n    =  numero di intervalli
+    % x_j  =  j*h
+    % h    =  periodo / (n+1);
     
     % Software by Carlo Zambaldo (info@carlozambaldo.it)
     % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
