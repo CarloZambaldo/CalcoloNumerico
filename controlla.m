@@ -1,4 +1,6 @@
 function [] = controlla(A)
+    %  [] = controlla(A)
+    %
     % la funzione restituisce:
     % - numero di condizionamento, stima del numero di condizionamento (se la matrice è molto grande)
     % - raggio spettrale
