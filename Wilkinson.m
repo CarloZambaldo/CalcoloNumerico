@@ -1,4 +1,6 @@
 function [perturbazione, C_fac] = Wilkinson(A, const, epsilon_M, max_Akk)
+    % [perturbazione, C_fac] = Wilkinson(A, const, epsilon_M, max_Akk)
+    %
     % effettua una stima della perturbazione massima attesa sulla matrice A,
     % const è un parametro che dipende dal metodo e calcolatore (deve
     % essere dato)
