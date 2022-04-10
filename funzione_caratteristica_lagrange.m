@@ -1,12 +1,17 @@
 function [polin_valutati_in_riga, Lebesgue_const] = funzione_caratteristica_lagrange(x_nodi, n_punti_grafico, a,b)
-%
-% [polin_valutati_in_riga, Lebesgue_const] = funzione_caratteristica_lagrange(x_nodi, n_punti_grafico, a,b); % [opzionale: a,b]
-%
-%   polin_valutati_in_riga    ha come righe i phi(k) polinomi
-%   caratteristici di Lagrange
-%
-% x_nodi  =  ascisse dei nodi
-% n_punti_grafico = numero punti asse x, dove si volgliono valutare i nodi
+    %
+    % [polin_valutati_in_riga, Lebesgue_const] = funzione_caratteristica_lagrange(x_nodi, n_punti_grafico, a,b); 
+    %
+    %   polin_valutati_in_riga    ha come righe i phi(k) polinomi
+    %   caratteristici di Lagrange
+    %
+    % x_nodi           =  ascisse dei nodi
+    % n_punti_grafico  =  numero punti asse x, dove si volgliono valutare i nodi
+    % a, b             =  estremi dell'intervallo di valutazione [opzionale]
+
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+    
 
 %%
 if nargin == 4
