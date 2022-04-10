@@ -1,19 +1,22 @@
 function [] = condizioni(A, P, toll)
     % condizioni(A, P, toll)
     %
-    % nota: inserire P solo per metodo di Richardson
+    % a seconda del numero di input restituisce più o meno caratteristiche associate ad A:
+    %   - numero di condizionamento e raggio spettrale
+    %   - verifica le condizioni:
+    %      * sufficienti per l'esistenza della fattorizzazione LU di A
+    %      * condizioni sufficienti per la convergenza per i metodi di:
+    %        ° Jacobi
+    %        ° Gauss Seidel
+    %        ° Richardson (**)
+    %   - inserire P solo per metodo di Richardson (**)
+    %   - inserendo toll viene calcolata la stima di iterazioni da svolgere
+    %   - determina il coefficiente h tale per cui (problema di Cauchy):
+    %      * Assoluta Stabilità metodo di EULERO IN AVANTI
+    %      * Assoluta Stabilità metodo di HEUN
     %
-    % per conoscere altre caratteristiche della matrice scrivere:
-    %   ' controlla(M) '
-    % inserendo toll viene calcolata la stima di iterazioni da svolgere
-    %
-    % verifica le condizioni:
-    % * sufficienti per l'esistenza della fattorizzazione LU di A
-    % * condizioni sufficienti per la convergenza per i metodi di:
-    %    - Jacobi
-    %    - Gauss Seidel
-    %    - Richardson
-    %
+    % ATTENZIONE! LA FUNZIONE POTREBBE BLOCCARSI, IN CASO INTERROMPERE
+    %             L'ESECUZIONE IL PRIMA POSSIBILE (premendo CTRL+C)
     
     % Software by Carlo Zambaldo (info@carlozambaldo.it)
     % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
@@ -27,6 +30,8 @@ function [] = condizioni(A, P, toll)
     end
     
     n = size(A,1);
+    fprintf("__________________________________________________________________\n\n");
+    fprintf("__________________________ INIZIO OUTPUT _________________________\n\n");
     fprintf("__________________________________________________________________\n\n");
     %fprintf("* numero di condizionamento della matrice: %g\n", cond(A));
     controlla(A);
@@ -224,5 +229,9 @@ function [] = condizioni(A, P, toll)
     else
         fprintf(" (il problema non è stiff!)\n");
     end
+    
+    fprintf("__________________________________________________________________\n\n");
+    fprintf("___________________________ FINE OUTPUT __________________________\n\n");
+    fprintf("__________________________________________________________________\n\n");
     
 end
