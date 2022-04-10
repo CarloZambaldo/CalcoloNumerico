@@ -1,10 +1,10 @@
 function [] = condizioniF(f, alpha, a, b, n_pti)
-    % condizioniF(f, alpha, a, b)
-    % f = funzione
-    % alpha = zero della funzione
-    % 
-    %  a,b  intervallo di plot, può essere omesso
-    %  n_pti = numero di punti nell'intervallo a,b (se non inserito = 1001)
+    % [] = condizioniF(f, alpha, a, b, n_pti)
+    %
+    %  f      =  funzione
+    %  alpha  =  zero della funzione
+    %  [a,b]  =  intervallo di plot (può essere omesso)
+    %  n_pti  =  numero di punti nell'intervallo a,b (se non inserito = 1001)
     
     
     % Software by Carlo Zambaldo (info@carlozambaldo.it)
