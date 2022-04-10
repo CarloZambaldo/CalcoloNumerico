@@ -8,10 +8,12 @@ function [x_nodi,uh] = diffusione_trasporto_reazione_ND(N, f, mu, eta, sigma, a,
     % N = numero di intervalli
     % N+1 = numero di NODI
     %
+    % ------------------------------------------------
     % risolve il problema:
     % -mu * u''(x) + eta * u'(x) + sigma * u(x) = f(x)
     % mu * u'(a) = delta  (**)
     % u(b) = beta
+    % ------------------------------------------------
     % 
     % NOTA: utilizza la funzione thomas per risolvere il sistema linare!
     % ATTENZIONE! può essere scritta come sigma = @(x) funzione(x)
@@ -20,6 +22,8 @@ function [x_nodi,uh] = diffusione_trasporto_reazione_ND(N, f, mu, eta, sigma, a,
     %  ordine = 1 -> approssimo la (**) con schema DF in avanti
     %  ordine = 2 -> approssimo la (**) con schema DF (de)centrate
     
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
     
     %% intro
     if ~isa(sigma,'function_handle')
