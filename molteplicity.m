@@ -3,10 +3,10 @@ function [m] = molteplicity(f,alpha,toll_f,toll_d,~)
     % calcola la molteplicità dello zero alpha
     %
     % input:
-    % f       : funzione 
+    % f       : anonymous function 
     % alpha   : valore dello zero
     %
-    % se lo zero è un'approssimazione usare:
+    % ATTENZIONE! se lo zero è un'approssimazione usare:
     % toll_f  :  tolleranza dello zero (errore accettabile nel valutare f(alpha))
     % toll_d  :  tolleranza per stabilire derivata n-esima in alpha == 0.
     %
@@ -14,9 +14,15 @@ function [m] = molteplicity(f,alpha,toll_f,toll_d,~)
     % se non viene inserita toll_d si assume che sia uguale a toll_f
     %
     % inserire il quinto parametro in ingresso se si vuole sopprimere l'output dei
-    % valori delle derivate (sconsigliato)
+    % valori delle derivate
     %
     % numero massimo di molteplicità calcolabile: 100
+    %
+    % NOTA: si consiglia sempre di utilizzare una tolleranza ragionavole e non imporla nulla
+    
+    % Software by Carlo Zambaldo (info@carlozambaldo.it)
+    % This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+    
     
     if nargin == 2
         toll_f = 0;
