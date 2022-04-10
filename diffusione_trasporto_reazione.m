@@ -11,7 +11,6 @@ function [x_nodi,uh] = diffusione_trasporto_reazione(N, f, mu, eta, sigma, a, b,
     % u(b) = beta
     % ------------------------------------------------
     %
-    % f     =   forzante del problema
     %
     % NOTA: utilizza la funzione thomas per risolvere il sistema linare!
     % ATTENZIONE! può essere scritta come sigma = @(x) funzione(x)
