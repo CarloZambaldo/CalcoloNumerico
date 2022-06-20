@@ -73,6 +73,8 @@ Raccolta di alcune funzioni utili durante il corso di Calcolo Numerico
 * _**poly2func**_
   
 
+Please notice: the function sym2fun was written by Marty Lawson (more info inside the script)
+
 # Licence #
 
 Copyright 2021 Carlo Zambaldo
