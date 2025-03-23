@@ -13,6 +13,10 @@ Raccolta di alcune funzioni utili durante il corso di Calcolo Numerico
 * _**Wilkinson**_
   estimates the maximum value of the perturbation expected on a given matrix
 * _**controlla**_
+
+## Eigenvalues and Eigenvectors ##
+* _**selectShift4InvPow**_
+  this function plots the Voronoi diagram for the given eigenvalues. This plot can be then used to estimate the allowable shifts that can be used in the inverse power method
   
   
 ## Non-linar Functions - Zeros of Functions ##
